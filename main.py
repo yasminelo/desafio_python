@@ -46,7 +46,7 @@ def enviar_email(nome_da_loja, tabela):
   msg['Subject'] = f"Relatório de vendas - {nome_da_loja}"
     
   # Fazer antes (apenas na 1ª vez): Ativar Aplicativos não Seguros.
-    # Gerenciar Conta Google -> Segurança -> Aplicativos não Seguros -> Habilitar
+  # Gerenciar Conta Google -> Segurança -> Aplicativos não Seguros -> Habilitar
   # Caso mesmo assim dê o erro: smtplib.SMTPAuthenticationError: (534,
   # Você faz o login no seu e-mail e depois entra em: https://accounts.google.com/DisplayUnlockCaptcha
   msg['From'] = 'email1@gmail.com'
